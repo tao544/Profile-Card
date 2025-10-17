@@ -47,7 +47,7 @@ Every visible item in the card features a data-testid attribute:
 ## 📋 Getting Started
 1. *Download this repository*
    ```bash
-   
+   https://github.com/tao544/Profile-Card.git
  2. *Navigate to the directory*
     ``` bash
     cd profile-card
@@ -57,10 +57,10 @@ Every visible item in the card features a data-testid attribute:
       (you can also view it in VS Coe with the "Live Server"extension.)
 ------
 ## 🌐 Live Preview
-[]()
+[https://taoheeda-profile-card.netlify.app/](https://taoheeda-profile-card.netlify.app/)
 -----
 ## 🔗 Source Code
-[]()
+[https://github.com/tao544/Profile-Card#](https://github.com/tao544/Profile-Card#)
 ------
 ## 👤 Creator
 Adepoju Taoheed | Web Developer | HNG Internship Participant
