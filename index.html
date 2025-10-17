@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My profile card</title>
+</head>
+<body> 
+<article data-testid="test-profile-card" class="profile-card">
+   <div class="card-content">
+      <header>
+            <figure data-testid="test-user-avatar" class="profile-image">
+              <img src="assets/myprofile-pics.jpg" alt=""> 
+              <h2 data-testid="test-user-name">Adepoju Taoheed Adedeji</h2>
+            </figure>
+            
+          <hr class="horizon">
+            <section class="bio-section">
+                <p data-testid="test-user-bio">
+                  I'm passionate frontend developer based in Lagos, Nigeria with a knack for creating engaging user-friendly web experiences and a love for clean, efficient code.
+                </p>
+            </section>
+            <div class="time-selection">
+               <p class="time-class"><i class="fa-solid fa-clock"></i><span data-testid="test-user-time" id="current-time">Loading....</span></p>
+            </div>
+            <nav data-testid="test-user-social-links">
+                <h4>Connect with me</h4>
+                <ul>
+                   <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/taoheed-adepoju-72839122b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                   <li><i class="fa-brands fa-square-x-twitter"></i><a href="https://x.com/Akenbi23?t=aRlU3gdDIiEJExI2bdrUbg&s=09" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+                   <li><i class="fa-brands fa-github"></i><a href="https://github.com/tao544" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-Github">Github</a></li>
+                   <li><i class="fa-brands fa-square-whatsapp"></i><a href="https://wa.me/2348124329127" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-Whatsapp">Whatsapp</a></li>
+                </ul>
+           </nav>
+           <!-- ----------hobbies------------ -->
+            <div class="list-wrapper">
+                <section data-testid="test-user-hobbies" class="list-card">
+                    <h3>Hobbies</h3>
+                    <ul>
+                       <li>Partying</li>
+                       <li>Coding</li>
+                       <li>Gaming</li>
+                       <li>Travelling</li>
+                    </ul>
+                </section>
+                <!-- -------------dislikes---------------- -->
+               <section data-testid="test-user-dislikes" class="list-card">
+                 <h3>Dislikes</h3>
+                    <ul>
+                       <li>Bugs in code</li>
+                       <li>Negative folks/ Energy</li>
+                       <li>Traffic</li>
+                       <li>Egoistic folks</li>
+                    </ul>
+               </section>
+           </div>
+       </header>
+  </div>
+</article>
+
+
+<script src="index.js"></script>
+</body>
+</html>

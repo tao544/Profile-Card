@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(fonts/poppins\ fonts/poppins-regular.ttf);
+}
+
+body{
+    
+    background: #f4f4f4;
+    font-family: poppins, sans-serif;
+     display: flex;
+}
+
+ img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 3px solid olive;
+    object-fit: cover;
+}
+.profile-image{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile-card{
+    text-align: center;
+    margin: 100px auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.profile-image h2{
+    padding: 20px;
+    color: burlywood;
+    font-family: 'poppins', sans-serif;
+    margin: 30px;
+    font-weight: 500;
+}
+.horizon{
+    text-align: center;
+    justify-content: center;
+    margin: 30px auto;
+    color: burlywood;
+}
+.bio-section p{
+    color: rgb(210, 179, 138);
+}
+.time-selection{
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+.time-class{
+    background-color: #e6eed6;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    color: olive;
+    border: 1px solid olive;
+}
+.fa-solid{
+    margin-right: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+nav a, .fa-brands{
+    text-decoration: none;
+    color: olive;
+    
+}
+h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: olive;
+    font-size: 18px;
+    font-weight: 600;
+}
+.fa-brands{
+    margin-right: 5px;
+}
+nav ul li{
+   
+    background-color: bisque;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+ul li{
+    list-style: none;
+}
+
+.list-wrapper{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    /* flex-wrap: wrap; */
+}
+.list-card{
+    flex: 1;
+    background:bisque;
+    border: 2px solid rgba(128, 128, 0, 0.632);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.list-card h3{
+    margin-top: 0;
+    color: olive;
+    font-weight: 600;
+}
+.list-card ul{
+    list-style: disc;
+    margin: 0;
+    color: #666;
+}
+.list-card li{
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .card-content{
+        flex-direction: row;
+    }
+    .profile-image{
+        display: block;
+        
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    .horizon{
+        margin-top: 10px;
+    }
+    nav ul{
+        display: block;
+        
+    }
+    nav ul li{
+        width: 200px;
+        margin:10px auto;
+        gap: 20px;
+    }
+    .list-wrapper{
+        display: block;
+    }
+    .list-card{
+        margin-top: 30px;
+        width: 360px;
+        padding: 15px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+      .card-content{
+        flex-direction: row;
+    }
+    .profile-image{
+        display: flex;
+        
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    .horizon{
+        margin-top: 10px;
+    }
+    nav ul{
+        display: block;
+        
+    }
+    nav ul li{
+        width: 200px;
+        margin:10px auto;
+        gap: 20px;
+    }
+    .list-wrapper{
+        display: block;
+    }
+    .list-card{
+        margin-top: 30px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
