@@ -1,66 +1,86 @@
-# 🌟 Profile Card Showcase — HNG Challenge
+# 🌟 HNG Frontend Challenge — Stage 1: Multi-Page Profile App
 
-This is a flexible, user-friendly Profile Card component crafted with HTML, CSS, and Vanilla JavaScript for the HNG Frontend Challenge. It employs semantic HTML standards and incorporates all necessary data-testid attributes for automated evaluation.
+This project is an upgrade of my **Stage 0 Profile Card**, now extended into a **multi-page application** with added **About Me** and **Contact Us** pages.  
+Built using **semantic HTML**, **accessible form elements**, **responsive CSS**, and **modular JavaScript**, this project follows the requirements of the **HNG Frontend Stage 1 Task**.
 
-## 🚀 Highlights
-- ✅ *Well-structured and inclusive HTML design*
-- ✅ *Adaptive layout for mobile, tablet, and desktop*
-- ✅ **Live current time display in milliseconds (Date.now())** 
-- ✅ *Avatar with descriptive alt text and figure element*
-- ✅ *Navigable social links (open in new tabs) via keyboard*
-- ✅ *Organized lists for hobbies and dislikes*
------
+---
 
-## 🛠 Tools Used
-- HTML5 — structured markup
-- CSS3 —adaptive design with Flexbox
-- JavaScript (ES6) — real-time time updates
-------
-## 🧪 Testing Identifiers (for automated checks)
-Every visible item in the card features a data-testid attribute:
+## 🚀 Features Overview
 
-| Component            | Test ID            |
-|----------------------|--------------------|
-| Profile Card Base    | test-profile-card|
-| User Name            | test-user-name  |
-| Biography            | test-user-bio   |
-| Current Time (milliseconds) | test-user-time |
-| Avatar Image         | test-user-avatar|
-| Social Links Holder  | test-user-social-links |
-| Single Social Link   | test-user-social- <network> (e.g. test-user-social-twitter) |
-| Hobbies List         | test-user-hobbies |
-| Dislikes List        | test-user-dislikes |
+### 🏠 Home Page (from Stage 0)
+- Clean, semantic, and accessible **Profile Card**
+- Displays **current time** using `Date.now()`
+- Organized structure with headings, lists, and alt text
+- Contains **navigable social links** and **keyboard accessibility**
+- Fully responsive across screen sizes
 
------
-## ♿ Usability & Adaptability
-- *Organized HTML elements*: <article>, <figure>, <nav>, and more.  
-- *Descriptive alt text for avatar image*  
-- *Clear focus indicators for keyboard users*  
-- *Flexible with media queries* — stacked layout on mobile, side-by-side on desktop
-------
+### 🧍‍♂️ About Me Page
+- Reflective page sharing personal insights and progress  
+- Structured with proper `<main>` and `<section>` tags  
+- Includes the following data-testid sections:
+  | Section | Test ID |
+  |----------|----------|
+  | Bio | `test-about-bio` |
+  | Goals | `test-about-goals` |
+  | Areas of Low Confidence | `test-about-confidence` |
+  | Note to Future Self | `test-about-future-note` |
+  | Extra Thoughts | `test-about-extra` |
 
+- Accessible headings (`<h2>`, `<h3>`) and semantic layout  
+- Consistent navbar across all pages  
 
+### 💬 Contact Us Page
+A fully functional contact form with validation.
 
+#### Fields (with data-testid attributes)
+| Field | Test ID |
+|--------|----------|
+| Full Name | `test-contact-name` |
+| Email | `test-contact-email` |
+| Subject | `test-contact-subject` |
+| Message | `test-contact-message` |
+| Submit Button | `test-contact-submit` |
+| Error Messages | `test-contact-error-<field>` |
+| Success Message | `test-contact-success` |
 
+#### Validation Rules
+- All fields are required  
+- Valid email format (e.g. `name@example.com`)  
+- Message must contain **at least 10 characters**  
+- Success message appears only on valid submission  
 
+#### Accessibility
+- Each input is associated with a `<label for="">`  
+- Error messages linked using `aria-describedby`  
+- Fully keyboard navigable and screen-reader friendly  
 
-## 📋 Getting Started
-1. *Download this repository*
-   ```bash
-   https://github.com/tao544/Profile-Card.git
- 2. *Navigate to the directory*
-    ``` bash
-    cd profile-card
-  3. * Launch the project in your browser simply open index.html directly, or use a local server like:
-       ```bash
-       npx live-server
-      (you can also view it in VS Coe with the "Live Server"extension.)
-------
+---
+
+## ♿ Accessibility & Responsiveness
+- Semantic tags: `<header>`, `<main>`, `<section>`, `<form>`, `<footer>`
+- Logical heading structure for screen readers  
+- Descriptive alt text and labels  
+- Mobile-first responsive layout with media queries  
+- Flexbox and Grid for adaptive design  
+
+---
+
+## 🛠 Tools & Technologies
+- **HTML5** — for semantic structure  
+- **CSS3** — for layout and responsiveness  
+- **JavaScript (ES6)** — for form validation  
+- **Git & GitHub** — for version control  
+- **Netlify / GitHub Pages** — for deployment  
+
+---
 ## 🌐 Live Preview
-[https://taoheeda-profile-card.netlify.app/](https://taoheeda-profile-card.netlify.app/)
------
-## 🔗 Source Code
-[https://github.com/tao544/Profile-Card#](https://github.com/tao544/Profile-Card#)
-------
-## 👤 Creator
-Adepoju Taoheed | Web Developer | HNG Internship Participant
+🔗 **[View Live Site on Netlify](https://taoheeda-profile-card.netlify.app/)**  
+
+## 🔗 Repository
+📂 **[GitHub Source Code](https://github.com/tao544/Profile-Card)**
+
+## 👤 Author
+**Adepoju Taoheed**  
+Frontend Developer | HNG Internship Participant  
+
+
